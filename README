@@ -1,0 +1,8 @@
+We should use RHEL 6:
+
+http://aws.amazon.com/amis/4238219800231432?_encoding=UTF8&queryArg=searchQuery&x=0&fromSearch=1&y=0&searchPath=amis&searchQuery=rhel%205.5
+
+Amazon AWS has a Java SDK.  Rackspace has a RESTful API for provisioning machines, but no Java SDK.
+
+http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/index.html
+
