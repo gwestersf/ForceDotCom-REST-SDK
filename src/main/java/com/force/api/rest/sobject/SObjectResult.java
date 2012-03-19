@@ -33,42 +33,42 @@ import java.util.Set;
  * @author gwester
  */
 public class SObjectResult {
-    private String id;
-    private Boolean success;
-    private Set<String> errors;
+	private String id;
+	private Boolean success;
+	private Set<String> errors;
 
-    public String getId() {
-        return id;
-    }
+	public String getId() {
+		return id;
+	}
 
-    public void setId(String id) {
-        this.id = id;
-    }
+	public void setId(String id) {
+		this.id = id;
+	}
 
-    public Boolean getSuccess() {
-        return success;
-    }
+	public Boolean getSuccess() {
+		return success;
+	}
 
-    public void setSuccess(Boolean success) {
-        this.success = success;
-    }
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
 
-    public Set<String> getErrors() {
-        return errors;
-    }
+	public Set<String> getErrors() {
+		return errors;
+	}
 
-    public void setErrors(Set<String> errors) {
-        this.errors = errors;
-    }
+	public void setErrors(Set<String> errors) {
+		this.errors = errors;
+	}
 
-    public String getErrorsFormatted() {
-        StringBuilder builder = new StringBuilder();
-        int count = 0;
-        int size = errors.size();
-        builder.append(String.valueOf(size) + " errors found! ");
-        for (String error : errors) {
-            builder.append("Error #" + String.valueOf(count++) + ") " + error);
-        }
-        return builder.toString();
-    }
+	public String getErrorsFormatted() {
+		StringBuilder builder = new StringBuilder();
+		int count = 0;
+		int size = errors.size();
+		builder.append(String.valueOf(size) + " errors found! ");
+		for (String error : errors) {
+			builder.append("Error #" + String.valueOf(count++) + ") " + error);
+		}
+		return builder.toString();
+	}
 }

@@ -36,22 +36,22 @@ import com.force.api.rest.sobject.model.SObject;
 public interface RestSObjectApi {
 
 	public DescribeGlobal describeGlobal() throws Exception;
-	
+
 	public DescribeSobject describeSobject(String sobjectName) throws Exception;
-	
+
 	public DescribeLayout describeLayout(String sobjectName) throws Exception;
-	
+
 	public SObjectResult create(SObject sobject) throws Exception;
-	
+
 	public SObjectResult update(SObject sobject) throws Exception;
-	
+
 	public SObjectResult delete(String sobjectName, String id) throws Exception;
-	
+
 	public SObject get(String sobjectName, String id) throws Exception;
-	
+
 	public QueryResult query(String query) throws Exception;
-	
+
 	public Set<SearchResult> search(String search) throws Exception;
-	
+
 	public Set<SearchResult> recent() throws Exception;
 }

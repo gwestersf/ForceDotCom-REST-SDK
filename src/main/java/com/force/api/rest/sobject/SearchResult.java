@@ -31,16 +31,16 @@ package com.force.api.rest.sobject;
  * @author gwester
  */
 public class SearchResult {
-    private String id;
-    private ResultInfo attributes;
-    
-    public String getId() {
-        return this.id;
-    }
-    public ResultInfo getAttributes() {
-        return this.attributes;
-    }
-    
+	private String id;
+	private ResultInfo attributes;
+
+	public String getId() {
+		return this.id;
+	}
+	public ResultInfo getAttributes() {
+		return this.attributes;
+	}
+
 	protected void setId(String id) {
 		this.id = id;
 	}

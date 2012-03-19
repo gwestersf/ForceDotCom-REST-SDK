@@ -35,7 +35,7 @@ package com.force.api.rest.sobject;
 public class RestApiException extends Exception {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private String exceptionMessage;
 	private int exceptionCode;
 
@@ -78,8 +78,8 @@ public class RestApiException extends Exception {
 		this.exceptionMessage = exceptionMessage;
 	}
 
-	 @Override
-	 public String toString() {
-		 return "RestApiException: HTTP " + String.valueOf(exceptionCode) + " " + exceptionMessage;
-	 }
+	@Override
+	public String toString() {
+		return "RestApiException: HTTP " + String.valueOf(exceptionCode) + " " + exceptionMessage;
+	}
 }

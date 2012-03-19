@@ -32,17 +32,17 @@ import java.util.List;
  * @author gwester
  */
 public class QueryResult {
-    private Integer totalSize;
-    private Boolean done;
-    private List<SearchResult> records;
-    
-    public Integer getTotalSize() {
-        return this.totalSize;
-    }
-    public Boolean getDone() {
-        return this.done;
-    }
-    public List<SearchResult> getRecords() {
-        return this.records;
-    }
+	private Integer totalSize;
+	private Boolean done;
+	private List<SearchResult> records;
+
+	public Integer getTotalSize() {
+		return this.totalSize;
+	}
+	public Boolean getDone() {
+		return this.done;
+	}
+	public List<SearchResult> getRecords() {
+		return this.records;
+	}
 }
