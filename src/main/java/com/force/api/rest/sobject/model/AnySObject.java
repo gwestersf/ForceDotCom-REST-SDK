@@ -34,7 +34,7 @@ public class AnySObject extends SObject {
 		}
 	}
 	
-	public String getName() {
+	public String getSObjectName() {
 		return name;
 	}
 	
@@ -63,6 +63,15 @@ public class AnySObject extends SObject {
 	public Object getField(String name) {
 		return fields.get(name);
 	}
+	
+	public String getFieldAsString(String name) {
+		Object fieldValue = fields.get(name);
+		if(fieldValue instanceof String) {
+			return (String) fieldValue;
+		} else {
+			return fieldValue.toString();
+		}
+	}
 
 	@Override
 	public String toJson() throws JSONException {
@@ -71,5 +80,10 @@ public class AnySObject extends SObject {
 			json.put(field, fields.get(field));
 		}
 		return json.toString();
+	}
+
+	@Override
+	public String getId() {
+		return (String)fields.get("Id");
 	}
 }

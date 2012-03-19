@@ -36,7 +36,9 @@ import org.json.JSONException;
  */
 public abstract class SObject {
 	
-	public abstract String getName();
+	public abstract String getId();
+	
+	public abstract String getSObjectName();
 	
 	public abstract Set<String> getFieldNames();
 	

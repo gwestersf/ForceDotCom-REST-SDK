@@ -25,7 +25,6 @@
  */
 package com.force.api.rest.sobject;
 
-import java.util.List;
 
 /**
  * 
@@ -33,19 +32,19 @@ import java.util.List;
  */
 public class SearchResult {
     private String id;
-    private List<ResultInfo> attributes;
+    private ResultInfo attributes;
     
     public String getId() {
         return this.id;
     }
-    public List<ResultInfo> getAttributes() {
+    public ResultInfo getAttributes() {
         return this.attributes;
     }
     
 	protected void setId(String id) {
 		this.id = id;
 	}
-	protected void setAttributes(List<ResultInfo> attributes) {
+	protected void setAttributes(ResultInfo attributes) {
 		this.attributes = attributes;
 	}
 }

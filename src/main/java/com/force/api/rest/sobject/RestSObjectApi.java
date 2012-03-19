@@ -25,7 +25,7 @@
  */
 package com.force.api.rest.sobject;
 
-import java.io.IOException;
+import java.util.Set;
 
 import com.force.api.rest.sobject.model.SObject;
 
@@ -35,23 +35,23 @@ import com.force.api.rest.sobject.model.SObject;
  */
 public interface RestSObjectApi {
 
-	public DescribeGlobal describeGlobal() throws IOException, RestApiException;
+	public DescribeGlobal describeGlobal() throws Exception;
 	
-	public DescribeSobject describeSobject(String sobjectName) throws IOException, RestApiException;
+	public DescribeSobject describeSobject(String sobjectName) throws Exception;
 	
-	public DescribeLayout describeLayout(String sobjectName) throws IOException, RestApiException;
+	public DescribeLayout describeLayout(String sobjectName) throws Exception;
 	
-	public SObjectResult create(SObject sobject) throws IOException, RestApiException;
+	public SObjectResult create(SObject sobject) throws Exception;
 	
-	public SObjectResult update(SObject sobject, String id) throws IOException, RestApiException;
+	public SObjectResult update(SObject sobject) throws Exception;
 	
-	public SObjectResult delete(String sobjectName, String id) throws IOException, RestApiException;
+	public SObjectResult delete(String sobjectName, String id) throws Exception;
 	
-	public SObject get(String sobjectName, String id) throws IOException, RestApiException;
+	public SObject get(String sobjectName, String id) throws Exception;
 	
-	public QueryResult query(String query) throws IOException, RestApiException;
+	public QueryResult query(String query) throws Exception;
 	
-	public SearchResult search(String search) throws IOException, RestApiException;
+	public Set<SearchResult> search(String search) throws Exception;
 	
-	public SearchResult recent() throws IOException, RestApiException;
+	public Set<SearchResult> recent() throws Exception;
 }
